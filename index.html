@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <form id="survey-form">
+        <h1> Customer<span id="title">Survey form</span></h1>
+
+       <label for="firstname">FirstName</label>
+       <input type="text" name="firstname" id="firstname" required>
+
+       <label for="lastname">LastName</label>
+       <input type="text" name="lastname" id="lastname" required>
+
+       <label for="dob">Date of Birth</label>
+       <input type="date" name="dob" id="dob" required>
+
+       <label for="state">State</label>
+       <select name="state" id="state" required>
+        <option value="#">--select a required option --</option>
+        <option value="chennai">Chennai</option>
+        <option value="delhi">Delhi</option>
+        <option value="hyderabad">Hyderabad</option>
+       </select>
+
+       <label>Gender</label>
+       <div id="gender-checkboxes">
+        <label for="male">Male</label>
+        <input type="checkbox" id="male" name="gender">
+        <label for="female">Female</label>
+        <input type="checkbox" id="female" name="gender">
+    </div>
+       
+       <label for="profession">Profession</label>
+       <input type="text" name="profession" id="profession">
+
+       <label for="mail">Gmail</label>
+       <input type="email" name="mail" id="mail">
+
+       <label for="mobile">Mobile</label>
+       <input type="tel" name="mobile" id="mobile">
+
+      <button type="submit" id="submit-button">Submit</button>
+      <button type="reset" id="reset-button">Reset</button>
+
+        
+    </form>
+
+    <!-- hidden popup starting -->
+
+    <div id="popup">
+        <div class="popup-content">
+            <h2>Survey form</h2>
+            <p><strong>Firstname:</strong><span id="popup-firstname"></span></p>
+           <p><strong>Lastname:</strong><span id="popup-lastname"></span></p>
+           <p><strong>DateofBirth:</strong><span id="popup-dob"></span></p>
+           <p><strong>Country:</strong><span id="popup-state"></span></p>
+           <p><strong>Gender:</strong><span id="popup-gender"></span></p>
+           <p><strong>Profession:</strong><span id="popup-profession"></span></p>
+           <p><strong>Gmail:</strong><span id="popup-gmail"></span></p>
+           <p><strong>Mobile</strong><span id="popup-mobile"></span></p>
+
+           <h2 class="thankyou">Thank You , Your Form is Submitted !</h2>
+           <button id="close-popup" onclick="window.location.reload()" >Another Response</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
