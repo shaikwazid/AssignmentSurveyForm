@@ -7,8 +7,16 @@ body{
     color:darkgreen;
     padding: 5px;
 }
+
+h1{
+    background-color: black;
+    color: yellow;
+    margin: 0 auto;
+    padding: 10px; 
+    border-radius: 50px;
+}
 form{
-    background-color: yellow;
+    background-color: aqua;
     border: 2px solid white;
     width: 400px;
     margin: 0 auto;
@@ -86,7 +94,7 @@ input[type="checkbox"],input[type="date"]{
 }
 
 .popup-content{
-    background-color: aqua;
+    background-color: yellow;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
